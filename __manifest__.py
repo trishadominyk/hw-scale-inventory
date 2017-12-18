@@ -20,13 +20,15 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['stock','hw_scale'],
+    'depends': ['stock','hw_scale','purchase'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'wizard/product_stock_weight.xml',
+        'wizard/purchase_order_weight.xml',
+        'views/product_template_stock_inherit.xml',
+        'views/purchase_order_form_inherit.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
